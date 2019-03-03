@@ -1,0 +1,87 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.toHome-icon {
+  position: absolute;
+  top: 0;
+  left: 50;
+  right: 0;
+}
+
+.design-rectangle {
+  background-color: #414141;
+  width: 100%;
+  height: 97px;
+}
+
+.body-flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef7f5;
+  padding-right: 200px;
+  margin-top: 70px;
+  margin-bottom: 150px;
+  width: 100%;
+}
+
+.body-textbox {
+  height: 428;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.about-details {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px;
+
+  color: #414141;
+}
+
+.profile-photo {
+  width: 251;
+  height: 428;
+}
+
+@media only screen and (max-width: 620px) {
+  .toHome-icon {
+    position: absolute;
+    top: 20px;
+    left: 320px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .body-flexContainer {
+    justify-content: flex-start;
+    width: 70%;
+  }
+
+  .design-rectangle {
+    background-color: #414141;
+    width: 100%;
+    height: 70px;
+  }
+
+  .body-textbox {
+    padding: 0;
+  }
+  .profile-photo {
+    position: fixed;
+    /* display: none; */
+    width: 75%;
+    height: 50%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    opacity: 0.5;
+  }
+}
